@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>华中科技大学文华学院十年校庆</title>
+<link type="text/css" rel="stylesheet" href="{dede:global.cfg_templets_skin/}/CSS/style.css" />
+</head>
+
+<body bgcolor="#B10200" style="height:auto">
+ <div id="main">
+ 	<div id="head">
+    </div>
+    <div class="menu2">
+     <center>
+       <div class="nav"><a href="{dede:global.cfg_basehost/}">　首　页</a></div>
+           {dede:channel row='9' type='top'}
+            <div class="nav"><a href="[field:typelink/]">[field:typename/]</a></div>
+            {/dede:channel}
+          </div>
+     </center>
+    </div>
+    <div id="things">
+    	<div id="leftpart">
+         <div id="mininews">
+          <div style="width:241px; height:25px">
+          {dede:type typeid='11'}
+<a style="color:#B00200; font-size: 18px; font-weight:bold; margin-left:23px; font-family:'微软雅黑'; float:left; width:170px">通知公告</a> <a href="[field:typelink/]" style=" float:right; width:48px">>>更多</a>
+           {/dede:type}
+          </div>
+          <div style="margin-top:30px; height:206px; ">
+          <ul>
+           {dede:arclist   row='9' titlelen='34' typeid='11'}
+           <li class="ll1"><span class="tinylogo"></span></li>
+           <li class="ll2"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+            {/dede:arclist}
+          </ul>
+          </div>
+          <div id="calendar">
+           <div style="width:241px; height:25px">
+          <a style="color:#B00200; font-size: 18px; font-weight:bold; margin-left:23px; font-family:'微软雅黑'; float:left; width:170px">校庆日程</a> <a href="#" style=" float:right; width:48px">>>更多</a>
+           </div>
+           <div style="margin-top:30px; height:206px; ">
+          <ul>
+          
+          </ul>
+           </div>
+          </div>
+         </div>
+    	</div>
+    	<div id="rightpart">
+         <div id="help">
+         	<div id="head1">
+             <div id="banner">
+              <img src="{dede:global.cfg_templets_skin/}/Images/tt.gif" />
+              <a>校庆动态</a>
+             </div>
+             <div id="yourposition">
+             <img src="{dede:global.cfg_templets_skin/}/Images/n_1.gif" />
+             您所在的位置 : {dede:field name='position'/} 
+             </div>
+         	</div>
+         	<div id="list">
+          <ul>
+              {dede:list pagesize='25'}
+           <li class="l1"><span class="tinylogo"></span></li>
+           <li class="l2"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+           <li class="l3">[[field:pubdate function="GetDateTimeMK(@me)"/]]</li>
+               {/dede:list}
+          
+          </ul>
+         </div>
+         	
+         	   <div id="acontainer">
+          {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+               </div>
+         
+         </div>
+    	</div>
+        <div id="bottompart">
+        	<a>Copyright 2011, All Rights Reserved(C) 2013 华中科技大学文华学院 版权所有</a>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
